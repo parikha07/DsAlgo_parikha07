@@ -5,18 +5,18 @@ int maxProfit(int seats[], int k, int n)
 	priority_queue<int> pq; 
 	for (int i = 0; i < k; i++) 
 		pq.push(seats[i]); 
-	int profit = 0; 
+	int  = 0; 
 	int c = 0; 
 	while (c < n) { 
 		int top = pq.top(); 
 		pq.pop(); 
 		if (top == 0) 
 			break;
-		profit = profit + top; 
+		 =  + top; 
 		pq.push(top - 1); 
 		c++; 
 	} 
-	return profit; 
+	return ; 
 } 
 int main() 
 { 
